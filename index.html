@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신예림-EDIYA</title>
+  <link rel="icon" href="./fv.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./css/main.css">
+<!-- ★추가 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script defer src="./js/main.js"></script>
+ <!-- ★추가 -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="inner">
+
+      <a href="/" class="logo">
+        <img src="./image/Elogo.png" alt="로고">
+      </a>
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <li>
+            <a href="/signin">로그인</a>
+          </li>
+          <li>
+            <a href="#">매장찾기</a>
+          </li>
+          <li>
+            <a href="#">고객의 소리</a>
+          </li>
+          <li>
+            <a href="#">이디야 스토어</a>
+          </li>
+        </ul>
+        <div class="search">
+          <input type="text">
+          <div class="material-icons">search</div>
+        </div>
+      </div>
+
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name">원두</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>원두</h4>
+                  <ul>
+                    <li>이디야 원두</li>
+                    <li>이디야 블랜드</li>
+                    <li>품질</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>원두의 특징</h4>
+                  <ul>
+                    <li>단맛</li>
+                    <li>쓴맛</li>
+                    <li>여운</li>
+                    <li>바디감</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>산지별 품종</h4>
+                  <ul>
+                    <li>에티오피아</li>
+                    <li>콜롬비아</li>
+                    <li>케냐</li>
+                    <li>과테말라</li>
+                    <li>블라질</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>이디야 커피</h4>
+                  <ul>
+                    <li>생두선별</li>
+                  <li>샘플 로스팅</li>
+                  <li>블랜딩 커핑</li>
+                  <li>제품 로스팅</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>이디야 커피</h4>
+                <ul>
+                  <li>생두선별</li>
+                  <li>샘플 로스팅</li>
+                  <li>블랜딩 커핑</li>
+                  <li>제품 로스팅</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">메뉴</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>음료</h4>
+                  <ul>
+                    <li>커피</li>
+                    <li>음료</li>
+                    <li>블렌딩 티</li>
+                    <li>프라푸치노</li>
+                    <li>쉐이크 & 에이드</li>
+                    <li>아이스 플레이크</li>
+                    <li>RTD</li>
+                    <li>시즌 음료</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>푸드</h4>
+                  <ul>
+                    <li>브레드</li>
+                    <li>디저트</li>
+                    <li>DELI</li>
+                    <li>RTE</li>
+                    <li>시즌</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>MD</h4>
+                  <ul>
+                    <li>텀블러</li>
+                    <li>티세트</li>
+                    <li>드립커피세트</li>
+                    <li>그라인드</li>
+                    <li>드립포토</li>
+                    <li>글라스서버</li>
+                    <li>드리퍼</li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </div>
+           
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">유통제품</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>스틱커피</h4>
+                  
+                </li>
+                <li>
+                  <h4>커피믹스</h4>
+                </li>
+                <li>
+                  <h4>캡커피</h4>
+                </li>
+                <li>
+                  <h4>수출입거래</h4>
+                </li>
+              </ul>
+            </div>
+           
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">이디야 멤버스</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>멤버십안내</h4>
+                </li>  
+                
+                <li>
+                  <h4>서비스안내</h4>
+                  
+                </li>
+                
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+               
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">상품권·제휴카드</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>제휴카드</h4>
+                  <ul>
+                    <li>하나카드</li>
+                    <li>신한카드</li>
+                    
+                  </ul>
+                </li>
+                <li>
+                  <h4>기프트카드</h4>
+                 
+                </li>
+                <li>
+                  <h4>모바일상품권</h4>
+                  
+                </li>
+                <li>
+                  <h4>단체·기업 구매</h4>
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">브랜드 소식</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>공지사항</h4>
+                 
+                </li>
+                <li>
+                  <h4>이벤트 안내</h4>
+                  
+                </li>
+                <li>
+                  <h4>사회공헌 활동</h4>
+                </li>
+              </ul>
+            </div>
+        <li class="item">
+          <div class="item__name">고객지원</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>고객의 소리</h4>
+                  
+                </li>
+                <li>
+                  <h4>소비사중심경영CCM</h4>
+                  
+                </li>
+                <li>
+                  <h4>제휴·제안</h4>
+                  
+                </li>
+                
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>월페이퍼</h4>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="badges">
+      <div class="badge">
+        <img src="./image/sanrio_event_bn.png" alt="Badge">
+      </div>
+    </div>
+  </header>
+
+  <!-- VISUAL -->
+  <section class="visual">
+    <div class="inner">
+      
+      <div class="title fade-in">
+        <img src="./image/visualTitle.png" alt="이디야x산리오">
+      </div>
+      <div class="fade-in">
+        <img src="./image/Ice Cone Chocolate.png" alt="아이스콘초콜렛" class="cup2 image">
+        </div>
+        <div class="fade-in">
+          <img src="./image/Kuromi Devil Chocolate.png" alt="쿠로미초콜렛" class="cup3 image">
+        </div>
+        <div class="fade-in">
+        <img src="./image/Pompompurin.png" alt="폼폼푸린" class="cup1 image">
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- NOTICE -->
+  <section class="notice">
+      <div class="notice-line">
+        <div class="bg-left"></div>
+        <div class="bg-right"></div>
+        <div class="inner">
+          <div class="inner__left">
+            <h2>공지사항</h2>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">카드 이용약관 개정 안내</a></div>
+                <div class="swiper-slide">
+                  <a href="#">개인정보처리방침 개정 안내</a></div>
+                <div class="swiper-slide">
+                  <a href="#">시스템 개선 및 서비스 점검 안내</a></div>
+                <div class="swiper-slide">
+                  <a href="#">Gift Card 구매 가능 금액 안내</a></div>
+              </div>
+            </div>
+            <a href="#" class="notice-line__more">
+              <div class="material-icons">add_circle</div>
+            </a>
+          </div>
+          <div class="inner__right">
+            <h2>이디야 이야기</h2>
+            <div class="toggle-promotion">
+              <div class="material-icons">expand_circle_down</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+ 
+  <section class="season-product">
+    <div class="inner">
+
+        <img src="./image/Blend Coffee Mix.png" alt="커피 블렌드 믹스" class="product" />
+<!-- ★추가 -->
+      <div class="text-group wow animate__animated animate__fadeInRight">
+        <img src="./image/BEANIST.png" alt="BEANIST" class="title" />
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--RESERVE COFFEE-->
+  <section class="reserve-coffee">
+    <div class="inner">
+
+      <div class="text-group wow animate__animated animate__fadeInLeft">
+        <img src="./image/ALWAYS BESIDE YOU, EDIYA COFFEE.png" alt="reserve coffee"/>
+        <div class="more">
+          <a href="#" class="btn btn--gold">메뉴 보기</a>
+        </div>
+      </div>
+   
+    </div>
+  </section>
+
+
+  <!--PICK YOUR FAVORITE-->
+  <section class="pick-your-favorite">
+    <div class="inner">
+
+      <img src="./image/dream_factory.png" alt="dream_factory" class="gallery" />
+<!-- ★추가 -->
+      <div class="text-group  wow animate__animated animate__fadeInRight ">
+        <img src="./image/DREAM FACTORY.png" alt="DREAM FACTORY" class="title" />
+               <div class="more">
+          <a href="#" class="btn btn--white">드림팩토리</a>
+        </div>
+          
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--RESERVE MAGAZINE-->
+  <section class="reserve-magazine">
+    <div class="inner">
+
+      <div class="magazine_text">
+        <img src="./image/brunch.png" alt="가맹점">
+        <div class="more">
+          <a href="#" class="btn btn-black">창업 문의</a>
+        </div>
+      </div>
+        
+           
+    </div>
+  </section>
+
+
+  <!--FOOTER-->
+  <footer>
+
+      <ul class="menu inner">
+        <li><a href="#">영상정보처리기기 운영관리 방침</a></li>
+        <li><a href="#" class="wh">개인정보처리방침</a></li>
+        <li><a href="#">멤버스 이용약관</a></li>
+        <li><a href="#">가맹 안내</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">점주의 방</a></li>
+      </ul>
+
+      <div class="info">
+        <span>사업자등록번호 107-86-16302</span>
+        <span>대표이사 : 문창기, 권익범</span>
+        <span>TEL : 02-543-6467 FAX : 02-543-7191</span>
+        <span>개인정보 책임자 : 이찬우</span>
+        <p>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17) <span>통신판매업 신고 : 강남 제 002519호</span> </p>
+      </div>
+
+      <p class="copyright">
+        &copy; <span class="this-year"></span> 2024 EDIYA Coffee Company. All Rights Reserved.
+      </p>
+
+</body>
+</html>
